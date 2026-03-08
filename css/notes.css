@@ -320,13 +320,9 @@
   transform: rotate(45deg);
 }
 
-/* ======================= */
-@media (min-width: 451px) {
-  .notes__item:hover .notes__copy-btn {
-    bottom: 10px;
-    opacity: 1;
-  }
-}
+/* ============================== */
+/* ============================== */
+/* ============================== */
 
 @media (min-width: 551px) {
   .notes__item:hover .notes__copy-btn {

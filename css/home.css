@@ -72,7 +72,8 @@
 
 @media (max-width: 550px) {
   .hero__inner {
-    border-radius: 50px;
+    border-radius: 40px 40px 50px 50px;
+    padding: 10px;
   }
 
   .hero__title {
@@ -80,10 +81,15 @@
     height: 60px;
     font-size: 20px;
     padding: 0px 20px;
+    margin-bottom: 10px;
+  }
+
+  .hero__list{
+    gap: 10px;
   }
 
   .hero__item {
-    padding: 20px;
+    padding: 20px 15px 15px;
   }
 
   .hero__item-text {
