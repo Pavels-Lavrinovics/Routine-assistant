@@ -61,10 +61,6 @@
   transition: background 0.2s;
 }
 
-.notes__windows-style-item:hover span::after {
-  background: rgba(29, 29, 29, 0.35);
-}
-
 .notes__windows-style-item--active span::after {
   background: rgba(29, 29, 29, 0.35);
 }
@@ -130,14 +126,7 @@
   transition: bottom 0.2s, opacity 0.2s, background 0.1s, backdrop-filter 0.2s;
 }
 
-.notes__copy-btn:hover {
-  background: #7B7B7B90;
-  backdrop-filter: blur(5px);
-}
 
-.notes__copy-btn:active {
-  background: #7B7B7BBB;
-}
 
 .notes-copy-icon {
   width: 40px;
@@ -186,13 +175,6 @@
 .notes__controls-plus {}
 
 .notes__controls-minus {}
-
-.notes__controls-plus:hover,
-.notes__controls-plus:active,
-.notes__controls-minus:hover,
-.notes__controls-minus:active {
-  background: rgba(29, 29, 29, 0.3);
-}
 
 .notes__controls-minus--active {
   background: rgba(29, 29, 29, 0.3);
@@ -289,18 +271,9 @@
   user-select: none;
 }
 
-.modal__save-btn img{
+.modal__save-btn img {
   height: 40px;
   width: 40px;
-}
-
-.modal__close-btn:hover {
-  filter: brightness(0.9);
-  box-shadow: none;
-}
-
-.modal__save-btn:hover {
-  background: rgba(29, 29, 29, 0.3);
 }
 
 .want-delete {
@@ -328,6 +301,35 @@
   .notes__item:hover .notes__copy-btn {
     bottom: 20px;
     opacity: 1;
+  }
+
+  .notes__windows-style-item:hover span::after {
+    background: rgba(29, 29, 29, 0.35);
+  }
+
+  .notes__copy-btn:hover {
+    background: #7B7B7B90;
+    backdrop-filter: blur(5px);
+  }
+
+  .notes__copy-btn:active {
+    background: #7B7B7BBB;
+  }
+
+  .notes__controls-plus:hover,
+  .notes__controls-plus:active,
+  .notes__controls-minus:hover,
+  .notes__controls-minus:active {
+    background: rgba(29, 29, 29, 0.3);
+  }
+
+  .modal__close-btn:hover {
+    filter: brightness(0.9);
+    box-shadow: none;
+  }
+
+  .modal__save-btn:hover {
+    background: rgba(29, 29, 29, 0.3);
   }
 }
 
@@ -420,7 +422,7 @@
     border-radius: 20px;
   }
 
-  .notes-copy-icon{
+  .notes-copy-icon {
     width: 30px;
     height: 30px;
   }
@@ -443,7 +445,7 @@
     border-radius: 40px;
   }
 
-  .modal__input{
+  .modal__input {
     border-radius: 30px;
     padding: 15px 20px;
   }
