@@ -184,6 +184,7 @@ div.upgrades__buy-btn {
 
   .clicker__interface{
     border-radius: 40px;
+    gap: 20px;
   }
 
 .controls__balance {
