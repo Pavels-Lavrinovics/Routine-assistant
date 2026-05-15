@@ -1,4 +1,4 @@
-# Routine Assistant
+# [Routine Assistant](https://pavels-lavrinovics.github.io/Routine-assistant/)
 
 A simple productivity web application that combines a **to-do list**, **notes system**, and **clicker game** in one interface.
 
@@ -38,7 +38,4 @@ All data is stored locally in the browser using **Local Storage**, which means n
 
 ## Data Persistence
 
-The application stores all user data directly in the browser using:
-
-```js
-localStorage
+The application stores all user data directly in the browser using localStorage
