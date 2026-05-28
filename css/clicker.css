@@ -157,6 +157,15 @@ div.upgrades__buy-btn {
     box-shadow: 2px 2px 5px 1px rgba(84, 84, 84, 0.29), -2px -2px 5px 1px rgba(255, 255, 255, 0.7), inset -1px -1px 1px 0 rgba(84, 84, 84, 0.1), inset 1px 1px 1px 0 rgba(255, 255, 255, 0.25);
   }
 
+.upgrades__buy-btn:hover{
+  box-shadow: 2px 2px 5px 1px rgba(84, 84, 84, 0.29), -2px -2px 5px 1px rgba(255, 255, 255, 0.7), inset -1px -1px 1px 0 rgba(84, 84, 84, 0.1), inset 1px 1px 1px 0 rgba(255, 255, 255, 0.25);
+}
+
+.upgrades__buy-btn:active{
+  box-shadow: -1px -1px 1px 0 rgba(84, 84, 84, 0.1), 1px 1px 1px 0 rgba(255, 255, 255, 0.25), inset -4px -4px 10px 0 rgba(255, 255, 255, 0.7), inset 4px 4px 10px 0 rgba(84, 84, 84, 0.25);
+}
+
+
   .controls__button:active {
     box-shadow: -1px -1px 1px 0 rgba(84, 84, 84, 0.1), 1px 1px 1px 0 rgba(255, 255, 255, 0.25), inset -4px -4px 10px 0 rgba(255, 255, 255, 0.7), inset 4px 4px 10px 0 rgba(84, 84, 84, 0.25);
   }
