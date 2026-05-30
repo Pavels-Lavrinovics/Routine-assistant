@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon-2.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32-2.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16-2.png">
+    <link rel="manifest" href="../favicon/site.webmanifest">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/main-n-header.css">
+    <link rel="stylesheet" href="../css/to-do-list.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#151515">
+    <title>Routine assistant | To-do list</title>
+</head>
+
+<body class="body">
+    <div class="wrapper">
+        <div class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header__logo">
+                        <a href="../index.html">Routine assistant</a>
+                    </div>
+
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="../index.html" class="nav__link">Home</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link nav__link--current">To-Do List</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="notes.html" class="nav__link">Notes</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="clock.html" class="nav__link">Alarms</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="clicker.html" class="nav__link">Clicker</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="burger-menu">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <main class="main">
+            <div class="container">
+                <div class="list__wrapper">
+                    <div class="list__title">
+                        To-Do list
+                    </div>
+                    <ul class="to-do-list">
+                        <li class="list__item ">
+                            <div class="list__item-checkbox">
+                                <div class="completed__button"></div>
+                            </div>
+                            <div class="space-filler"></div>
+                            <div class="list__text">
+                                Hover on me on a PC or double click on phone
+                            </div>
+                            <span class="expand-btn"><img src="../img/icons/expand-arrow.svg" alt=""></span>
+                        </li>
+                        <li class="list__item">
+                            <div class="list__item-checkbox">
+                                <div class="completed__button"></div>
+                            </div>
+                            <div class="space-filler"></div>
+                            <div class="list__text">
+                                If you wrote an essay here, you can expand this line by clicking button on right side
+                            </div>
+                            <span class="expand-btn"><img src="../img/icons/expand-arrow.svg" alt=""></span>
+                        </li>
+                    </ul>
+                    <div class="list__controls">
+                        <div class="list__controls-plus">+</div>
+                        <div class="list__controls-minus">-</div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="https://github.com/Pavels-Lavrinovics" class="footer__link" target="_blank">
+                                <img src="../img/icons/git.svg" alt="link to my github" class="footer__icon">
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="https://www.linkedin.com/in/pavels-lavrinovics" class="footer__link" target="_blank">
+                                <img src="../img/icons/linkedin-logo.svg" alt="link to my linked in" class="footer__icon">
+                            </a>
+                        </li>
+                        <li class="footer__item footer__item--long">
+                            <p class="footer__text">
+                                Design & Code by: P. Lavrinovics
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div class="modal">
+        <div class="container">
+            <div class="modal__inner">
+                <div class="modal__window">
+                    <div class="modal__close-btn"><span><img src="../img/icons/cross.svg" alt=""></span></div>
+                    <input type="text" placeholder="Write new task..." class="modal__input">
+                    <div class="modal__save-btn"><img src="../img/icons/check.svg" alt=""></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="../js/burger.js"></script>
+    <script src="../js/todolist.js"></script>
+</body>
+
+</html>
