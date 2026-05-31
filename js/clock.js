@@ -169,3 +169,32 @@ document.addEventListener("click", (e) => {
     deleteModalButton.classList.toggle("controls__button--active");
   }
 });
+
+// ================== ALARM FUNCTIONALITY ==================
+
+// getting current time in 24 hour format
+function getCurrentTimeString() {
+  const now = new Date();
+  const hours = now.getHours().toString().padStart(2, "0");
+  const minutes = now.getMinutes().toString().padStart(2, "0");
+  return `${hours}:${minutes}`;
+}
+
+setInterval(checkAlarms, 10000); // every 10 seconds
+function checkAlarms() {
+  const now = getCurrentTimeString();
+  const alarms = JSON.parse(localStorage.getItem("alarms")) || [];
+  alarms.forEach((alarm) => {
+    if (alarm.enabled && alarm.time === now) {
+      triggerAlarm(alarm);
+      localStorage.setItem("alarms", JSON.stringify(alarms));
+      renderAlarms(alarms);
+    }
+  });
+}
+
+function triggerAlarm(alarm) {
+  // console.log(`Alarm triggered: ${alarm.label}`);
+  alert(`It's ${alarm.label} time!`);
+  alarm.enabled = false;
+}

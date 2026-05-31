@@ -102,6 +102,8 @@
     1px 1px 1px 0 rgba(255, 255, 255, 0.25);
   height: 80px;
   min-width: 80px;
+  white-space: nowrap;
+  overflow: scroll;
   border-radius: 40px;
   font-weight: 400;
   font-size: 20px;
