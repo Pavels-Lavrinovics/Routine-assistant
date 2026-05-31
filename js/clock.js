@@ -180,7 +180,8 @@ function getCurrentTimeString() {
   return `${hours}:${minutes}`;
 }
 
-setInterval(checkAlarms, 10000); // every 10 seconds
+// check alarms every 10 seconds
+setInterval(checkAlarms, 10000);
 function checkAlarms() {
   const now = getCurrentTimeString();
   const alarms = JSON.parse(localStorage.getItem("alarms")) || [];
@@ -192,9 +193,21 @@ function checkAlarms() {
     }
   });
 }
+const alarmSound = new Audio("../audio/alarm.mp3");
 
-function triggerAlarm(alarm) {
-  // console.log(`Alarm triggered: ${alarm.label}`);
-  alert(`It's ${alarm.label} time!`);
+async function triggerAlarm(alarm) {
   alarm.enabled = false;
+  alarmSound.currentTime = 0;
+  try {
+    await alarmSound.play();
+    alert(`It's ${alarm.label} time!`); 
+  } catch (err) {
+    if (err.name !== "AbortError") {
+      console.error("Could not play alarm:", err);
+    }
+    alert(`It's ${alarm.label} time!`);
+  }
+  alarmSound.pause();
+  alarmSound.currentTime = 0;
+
 }
