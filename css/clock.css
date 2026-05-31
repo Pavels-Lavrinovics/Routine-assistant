@@ -60,9 +60,21 @@
 }
 
 .clock__content {
+  display: none;
+}
+
+.clock__content--active{
+  display: block;
 }
 .clock__content-alarms {
   display: flex;
+  gap: 20px;
+  height: 100%;
+}
+
+.clock__content-timers {
+  display: flex;
+  flex-direction: column;
   gap: 20px;
   height: 100%;
 }
@@ -514,9 +526,6 @@
 }
 
 @media (max-width: 450px) {
-  .alarm-clock{
-    /* font-size: 40px; */
-  }
 
 }
 

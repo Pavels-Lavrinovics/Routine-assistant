@@ -58,24 +58,32 @@
               <div class="clock__title">Alarms</div>
               <ul class="clock__controls">
                 <li class="clock__controls-item">
-                  <button class="clock__controls-button clock__controls-button--active">Alarms</button>
+                  <button class="clock__controls-button clock__controls-button--alarms clock__controls-button--active">Alarms</button>
                 </li>
                 <li class="clock__controls-item">
-                  <button class="clock__controls-button">Timers</button>
+                  <button class="clock__controls-button clock__controls-button--timers">Timer</button>
                 </li>
               </ul>
             </div>
           </div>
-          <div class="clock__content">
-            <div class="clock__content-alarms">
+          <div class="clock__content clock__content--alarms clock__content--active">
+            <div class="clock__content-alarms ">
               <div class="alarm-clock">00:00</div>
               <ul class="alarm-list">
               </ul>
             </div>
-            <!-- <div class="clock__content-timers"></div> -->
             <div class="controls">
               <button class="controls__button controls__button--add">+</button>
               <button class="controls__button controls__button--delete">-</button>
+            </div>
+          </div>
+          <div class="clock__content clock__content--timers">
+            <ul class="clock__content-timers">
+              
+            </ul>
+            <div class="controls">
+              <button class="controls__button ">+</button>
+              <button class="controls__button ">-</button>
             </div>
           </div>
         </div>

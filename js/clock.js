@@ -71,6 +71,35 @@ if (localStorage.getItem("alarms")) {
 document.addEventListener("click", (e) => {
   const target = e.target;
 
+  const targetTimersSwitchButton = target.closest(".clock__controls-button--timers");
+  if (targetTimersSwitchButton) {
+    const alarmsContent = document.querySelector(".clock__content--alarms");
+    alarmsContent.classList.remove("clock__content--active");
+    const timersContent = document.querySelector(".clock__content--timers");
+    timersContent.classList.add("clock__content--active");
+    const alarmsSwitchButton = document.querySelector(".clock__controls-button--alarms");
+    alarmsSwitchButton.classList.remove("clock__controls-button--active");
+    const timersSwitchButton = document.querySelector(".clock__controls-button--timers");
+    timersSwitchButton.classList.add("clock__controls-button--active");
+    const clockTitle = document.querySelector(".clock__title");
+    clockTitle.innerText = "Timer";
+    return;
+  }
+  const targetAlarmsSwitchButton = target.closest(".clock__controls-button--alarms");
+  if (targetAlarmsSwitchButton) {
+    const timersContent = document.querySelector(".clock__content--timers");
+    timersContent.classList.remove("clock__content--active");
+    const alarmsContent = document.querySelector(".clock__content--alarms");
+    alarmsContent.classList.add("clock__content--active");
+    const timersSwitchButton = document.querySelector(".clock__controls-button--timers");
+    timersSwitchButton.classList.remove("clock__controls-button--active");
+    const alarmsSwitchButton = document.querySelector(".clock__controls-button--alarms");
+    alarmsSwitchButton.classList.add("clock__controls-button--active");
+    const clockTitle = document.querySelector(".clock__title");
+    clockTitle.innerText = "Alarms";
+    return;
+  }
+
   // Alarm main button functionality
   const targetAlarmButton = target.closest(".alarm-list-item-button");
   const targetAlarmButtonDelete = target.closest(
