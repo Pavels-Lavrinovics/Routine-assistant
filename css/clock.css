@@ -131,8 +131,7 @@
   transition: box-shadow 0.2s;
 }
 
-
-.alarm-list-item-element button.alarm-list-item-button--delete{
+.alarm-list-item-element button.alarm-list-item-button--delete {
   box-shadow:
     4px 4px 10px 1px rgba(84, 84, 84, 0.29),
     -4px -4px 10px 1px rgba(255, 255, 255, 0.7),
@@ -140,22 +139,24 @@
     inset 1px 1px 1px 0 rgba(255, 255, 255, 0.25);
 }
 
-.alarm-list-item-button::after{
-  content: '';
+.alarm-list-item-button::after {
+  content: "";
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: url('../img/icons/cross.svg') 50% 50%/40px no-repeat;
+  background: url("../img/icons/cross.svg") 50% 50%/40px no-repeat;
   width: 40px;
   height: 40px;
 
-  transition: opacity 0.2s, visibility 0.2s;
+  transition:
+    opacity 0.2s,
+    visibility 0.2s;
   opacity: 0;
   visibility: hidden;
 }
 
-.alarm-list-item-button--delete::after{
+.alarm-list-item-button--delete::after {
   opacity: 1;
   visibility: visible;
 }
@@ -391,6 +392,20 @@
 
   .modal__save-btn:hover {
     background: rgba(29, 29, 29, 0.3);
+  }
+}
+
+@media (max-width: 1000px) {
+  .clock__content-alarms {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
+  }
+
+  .alarm-clock,
+  .alarm-list {
+    width: 100%;
   }
 }
 
