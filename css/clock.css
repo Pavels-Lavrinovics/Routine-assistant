@@ -433,71 +433,60 @@
 }
 
 @media (max-width: 550px) {
-  .notes__windows-style {
-    gap: 30px;
-  }
 
-  .notes__windows-style span {
-    width: 30px;
-    height: 30px;
-  }
-
-  .notes__inner {
+  .clock__inner{
+    padding: 10px;
     border-radius: 40px;
   }
-
-  .notes__title {
+  .clock__header-inner{
+    height: 60px;
+    padding: 15px 10px 15px 20px;
+    border-radius: 40px;
+  }
+  
+  .clock__title{
     font-size: 20px;
   }
 
-  .notes__text {
+  .clock__controls-button{
     font-size: 16px;
-  }
-
-  .notes__header {
-    padding: 10px 10px 0;
-    border-radius: 40px 40px 0 0;
-  }
-
-  .notes__header-inner {
-    padding: 0px 20px;
-    height: 60px;
-  }
-
-  .notes__content {
-    padding: 10px;
-    gap: 10px;
-  }
-
-  .notes__item {
-    height: 259px;
+    padding: 15px;
     border-radius: 30px;
   }
 
-  .notes__controls {
+  .alarm-clock{
+    font-size: 60px;
+  }
+  .alarm-list{
     gap: 10px;
-    padding: 0 10px 10px;
   }
 
-  .notes__controls-plus,
-  .notes__controls-minus {
+  .alarm-list-item{
+    gap: 10px;
+  }
+
+  .alarm-list-item-element{
     height: 60px;
-    font-size: 40px;
+    min-width: 60px;
+    font-size: 14px;
   }
-
-  .want-delete {
-    bottom: 10px;
-  }
-
-  .notes__copy-btn {
-    width: calc(100% - 20px);
-    left: 10px;
-    border-radius: 20px;
-  }
-
-  .notes-copy-icon {
+  .alarm-list-item-button{
     width: 30px;
     height: 30px;
+  }
+  .alarm-list-item-description{
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+  }
+  .controls{
+    margin-top: 10px;
+    gap: 10px;
+  }
+  .controls__button{
+    font-size: 26px;
+    height: 60px;
+    border-radius: 30px;
   }
 
   .modal__close-btn {
@@ -506,44 +495,32 @@
     top: -70px;
   }
 
-  .modal__input {
-    padding: 15px 9px;
-    font-size: 20px;
-    height: 280px;
-  }
-
   .modal__window {
     padding: 10px;
     gap: 10px;
     border-radius: 40px;
   }
 
-  .modal__input {
-    border-radius: 30px;
-    padding: 15px 20px;
+  .modal__save-btn {
+    height: 60px;
   }
 
-  .modal__save-btn {
+  .modal__window-content{
+    gap: 10px;
+  }
+  .modal__window-input{
     height: 60px;
   }
 }
 
 @media (max-width: 450px) {
-  .notes__item--hover {
-    bottom: 10px;
-    opacity: 1;
+  .alarm-clock{
+    /* font-size: 40px; */
   }
+
 }
 
 @media (max-width: 350px) {
-  .notes__title {
-    font-size: 25px;
-  }
-
-  .modal__input {
-    padding: 18px 9px;
-    font-size: 16px;
-  }
 
   .modal__save-btn {
     font-size: 25px;
